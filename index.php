@@ -15,6 +15,17 @@
     <header class="header">
       <i class="fa-solid fa-cash-register"></i>
     </header>
+    <aside>
+      <button class="btn-aside">
+        Cadastro
+      </button>
+      <button class="btn-aside">
+        Entradas e saidas
+      </button>
+      <button class="btn-aside">
+        Estoque
+      </button>
+    </aside>
   </div>
 </body>
 
