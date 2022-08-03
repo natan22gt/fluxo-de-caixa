@@ -4,3 +4,16 @@
   box-sizing: border-box;
 }
 
+
+.header {
+  width: 100vw;
+  height: 6rem;
+  background-color: #a1a1a1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  i {
+    font-size: 24pt;
+  }
+}

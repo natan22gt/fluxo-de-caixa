@@ -15,7 +15,7 @@
     <header class="header">
       <i class="fa-solid fa-cash-register"></i>
     </header>
-    <aside>
+    <aside class="aside">
       <button class="btn-aside">
         Cadastro
       </button>
