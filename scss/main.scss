@@ -4,16 +4,45 @@
   box-sizing: border-box;
 }
 
+.container {
+  display: grid;
+  grid-template-areas: 
+  'header header header'
+  'sidebar main main';
+}
 
 .header {
   width: 100vw;
   height: 6rem;
-  background-color: #a1a1a1;
+  background-color: #5a5555;
   display: flex;
+  grid-area: header;
   justify-content: center;
   align-items: center;
 
   i {
     font-size: 24pt;
+    color: whitesmoke;
+  }
+}
+
+.sidebar {
+  width: 20vw;
+  height: calc(100vh - 6rem);
+  display: flex;
+  background-color: #a1a1a1;
+  grid-area: sidebar;
+  flex-direction: column;
+
+  button {
+    padding-block: 20px;
+    border-radius: none;
+    border-style: none;
+    background-color: white;
+    transition: 100ms ease-in-out;
+    &:hover {
+      background-color: #222;
+      color: antiquewhite;
+    }
   }
 }

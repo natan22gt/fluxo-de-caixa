@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -15,7 +15,7 @@
     <header class="header">
       <i class="fa-solid fa-cash-register"></i>
     </header>
-    <aside class="aside">
+    <aside class="sidebar">
       <button class="btn-aside">
         Cadastro
       </button>
@@ -26,6 +26,9 @@
         Estoque
       </button>
     </aside>
+    <main class="content">
+      <iframe src="" frameborder="0" class="content-page"></iframe>
+    </main>
   </div>
 </body>
 
