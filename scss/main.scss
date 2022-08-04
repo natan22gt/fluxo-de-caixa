@@ -2,18 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
-
 .container {
+  width: 100%;
   display: grid;
+  grid-template-rows: 15vh 85vh;
+  grid-template-columns: 20% 40% 40%;
   grid-template-areas: 
   'header header header'
   'sidebar main main';
 }
 
 .header {
-  width: 100vw;
-  height: 6rem;
   background-color: #5a5555;
   display: flex;
   grid-area: header;
@@ -27,8 +28,6 @@
 }
 
 .sidebar {
-  width: 20vw;
-  height: calc(100vh - 6rem);
   display: flex;
   background-color: #a1a1a1;
   grid-area: sidebar;
@@ -44,5 +43,14 @@
       background-color: #222;
       color: antiquewhite;
     }
+  }
+}
+
+.content {
+  grid-area: main;
+  iframe {
+    width: 80vw;
+    height: 85vh;
+    background-color: #222;
   }
 }
