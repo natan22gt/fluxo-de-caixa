@@ -14,11 +14,11 @@
       grid-template-rows: 15vh 85vh;
   -ms-grid-columns: 20% 40% 40%;
       grid-template-columns: 20% 40% 40%;
-      grid-template-areas: 'header header header' 'sidebar main main';
+      grid-template-areas: "header header header" "sidebar main main";
 }
 
 .header {
-  background-color: #5a5555;
+  background-color: #00b4d8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,15 +35,18 @@
 }
 
 .header i {
-  font-size: 24pt;
+  font-size: 36pt;
+  padding: 15px;
   color: whitesmoke;
+  background-color: #03045e;
+  border-radius: 50%;
 }
 
 .sidebar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #a1a1a1;
+  background-color: #caf0f8;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: sidebar;
@@ -57,14 +60,14 @@
   padding-block: 20px;
   border-radius: none;
   border-style: none;
-  background-color: white;
-  -webkit-transition: 100ms ease-in-out;
-  transition: 100ms ease-in-out;
+  background-color: #caf0f8;
+  -webkit-transition: background-color 100ms ease-in-out, color 100ms ease-in-out;
+  transition: background-color 100ms ease-in-out, color 100ms ease-in-out;
 }
 
 .sidebar button:hover {
-  background-color: #222;
-  color: antiquewhite;
+  background-color: #03045e;
+  color: whitesmoke;
 }
 
 .content {
@@ -72,10 +75,12 @@
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: main;
+  width: 80vw;
+  height: 85vh;
 }
 
 .content iframe {
-  width: 80vw;
-  height: 85vh;
-  background-color: #222;
+  width: 100%;
+  height: 100%;
+  background-color: white;
 }

@@ -1,0 +1,47 @@
+@import "_colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container-caixa {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-template-rows: 85% 15%;
+  grid-template-areas:
+    "form data"
+    "form result";
+}
+
+.form-venda {
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  fieldset {
+    border: none;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.data {
+  grid-area: data;
+}
+
+.result {
+  grid-area: result;
+}
+
+.align-center {
+  align-items: center;
+}
