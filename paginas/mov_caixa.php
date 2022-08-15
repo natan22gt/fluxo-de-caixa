@@ -12,28 +12,30 @@
 <body>
     <div class="container-caixa">
         <form action="" method="" class="form-venda">
-            <fieldset>
-                <label for="caixa">Caixa: </label>
-                <input type="text" name="caixa"></input>
-            </fieldset>
-            <fieldset>
-                <label for="data">Data: </label>
-                <input type="date" name="data"></input>
-            </fieldset>
-            <fieldset>
-                <label for="descricao">Descrição: </label>
-                <textarea name="descricao" id="" cols="30" rows="10"></textarea>
-            </fieldset>
-            <fieldset>
-                <label for="operacao">Operação: </label>
-                <input type="radio" name="operacao">Entrada de caixa</input>
-                <input type="radio" name="operacao">Saida de caixa</input>
-            </fieldset>
-            <fieldset>
-                <label for="valor">Valor</label>
-                <input type="text" name="valor">
-            </fieldset>
-            <fieldset class="align-center">
+            <div class="form-items">
+                <fieldset>
+                    <label for="caixa">Caixa: </label>
+                    <input type="text" name="caixa"></input>
+                </fieldset>
+                <fieldset>
+                    <label for="data">Data: </label>
+                    <input type="date" name="data"></input>
+                </fieldset>
+                <fieldset>
+                    <label for="descricao">Descrição: </label>
+                    <textarea name="descricao" id="" cols="30" rows="10"></textarea>
+                </fieldset>
+                <fieldset>
+                    <label for="operacao">Operação: </label>
+                    <input type="radio" name="operacao">Entrada de caixa</input>
+                    <input type="radio" name="operacao">Saida de caixa</input>
+                </fieldset>
+                <fieldset>
+                    <label for="valor">Valor</label>
+                    <input type="text" name="valor">
+                </fieldset>
+            </div>
+            <fieldset class="buttons">
                 <input type="submit" value="Gravar">
                 <input type="reset" value="Reset">
                 <input type="button" value="Fechar" id="close">
