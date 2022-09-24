@@ -26,8 +26,7 @@
         Estoque
       </button>
     </aside>
-    <main class="content">
-      <iframe src="paginas/mov_caixa.php" frameborder="0" class="content-page"></iframe>
+    <main class="content" style="background-color: blue;">
     </main>
   </div>
 </body>
