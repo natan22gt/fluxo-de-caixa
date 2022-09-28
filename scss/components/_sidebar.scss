@@ -1,0 +1,22 @@
+.sidebar {
+  display: flex;
+  background-color: $lighter-blue;
+  grid-area: sidebar;
+  flex-direction: column;
+
+  .btn-aside {
+    text-decoration: none;
+    padding: 20px;
+    border-radius: none;
+    border-style: none;
+    background-color: $lighter-blue;
+    transition: background-color 100ms ease-in-out, color 100ms ease-in-out;
+    &:hover {
+      background-color: $darker-blue;
+      color: $white;
+    }
+    &:visited {
+      color: inherit;
+    }
+  }
+}

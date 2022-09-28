@@ -1,0 +1,15 @@
+.header {
+  background-color: $main-blue;
+  display: flex;
+  grid-area: header;
+  justify-content: center;
+  align-items: center;
+
+  i {
+    font-size: 36pt;
+    padding: 15px;
+    color: $white;
+    background-color: $darker-blue;
+    border-radius: 50%;
+  }
+}

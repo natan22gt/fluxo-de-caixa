@@ -1,4 +1,6 @@
 @import '_colors';
+@import './components/header';
+@import './components/sidebar';
 
 * {
   margin: 0;
@@ -10,45 +12,10 @@
   width: 100%;
   display: grid;
   grid-template-rows: 15vh 85vh;
-  grid-template-columns: 20% 40% 40%;
+  grid-template-columns: 20vw 40vw 40vw;
   grid-template-areas:
     "header header header"
     "sidebar main main";
-}
-
-.header {
-  background-color: $main-blue;
-  display: flex;
-  grid-area: header;
-  justify-content: center;
-  align-items: center;
-
-  i {
-    font-size: 36pt;
-    padding: 15px;
-    color: whitesmoke;
-    background-color: $darker-blue;
-    border-radius: 50%;
-  }
-}
-
-.sidebar {
-  display: flex;
-  background-color: $lighter-blue;
-  grid-area: sidebar;
-  flex-direction: column;
-
-  button {
-    padding-block: 20px;
-    border-radius: none;
-    border-style: none;
-    background-color: $lighter-blue;
-    transition: background-color 100ms ease-in-out, color 100ms ease-in-out;
-    &:hover {
-      background-color: $darker-blue;
-      color: whitesmoke;
-    }
-  }
 }
 
 .content {

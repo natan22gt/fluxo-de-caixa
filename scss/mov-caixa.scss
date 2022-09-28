@@ -1,9 +1,11 @@
 @import "_colors";
+@import "./components/header";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
@@ -15,26 +17,57 @@ body {
   width: 100vw;
   height: 100vh;
   display: grid;
-  column-gap: 20px;
-  grid-template-columns: 35% 65%;
-  grid-template-rows: 85% 15%;
+  grid-template-columns: 100vw;
+  grid-template-rows: 15vh 85vh;
+  grid-template-areas:
+    "header"
+    "main";
+  background-color: #fffa;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 70% 30%;
   grid-template-areas:
     "form data"
     "form result";
+}
+
+.header {
+  grid-area: header;
+  justify-content: space-evenly;
+  ul {
+    display: flex;
+    justify-content: space-between;
+
+    li a {
+      text-decoration: none;
+      background-color: $white;
+      color: $black;
+      padding: 10px;
+    }
+  }
 }
 
 .form-venda {
   grid-area: form;
   display: flex;
   flex-direction: column;
-  row-gap: 15px;
+  row-gap: 0;
   justify-content: space-around;
+
   fieldset {
+    padding-inline: 20px;
     border: none;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: stretch;
+
+    &:nth-of-type(4) {
+      justify-content: space-evenly;
+    }
   }
 
   .buttons {
@@ -51,4 +84,8 @@ body {
 
 .result {
   grid-area: result;
+}
+
+.hidden {
+  z-index: -1;
 }

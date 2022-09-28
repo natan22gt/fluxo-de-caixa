@@ -16,17 +16,18 @@
       <i class="fa-solid fa-cash-register"></i>
     </header>
     <aside class="sidebar">
-      <button class="btn-aside">
+      <a class="btn-aside">
         Cadastro
-      </button>
-      <button class="btn-aside">
+      </a>
+      <a href="pages/mov_caixa.php" class="btn-aside">
         Entradas e saidas
-      </button>
-      <button class="btn-aside">
+      </a>
+      <a class="btn-aside">
         Estoque
-      </button>
+      </a>
     </aside>
     <main class="content" style="background-color: blue;">
+      <!-- <?php require_once "./paginas/mov_caixa.php" ?> -->
     </main>
   </div>
 </body>
